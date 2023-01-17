@@ -1,0 +1,43 @@
+.message {
+    height: 30px;
+    text-align:center;
+  }
+  
+  @function pxToEm($to, $from: 16) {
+    @return $to / $from + 0em;
+  }
+  
+  .board {
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: pxToEm(20);
+    margin: 40px auto 0 auto;
+    justify-content:center;
+  }
+  
+  .cell {
+    font-size: pxToEm(60);
+    line-height: pxToEm(80, 60);
+    width: pxToEm(80, 60);
+    height: pxToEm(80, 60);
+    background:rgb(231, 231, 231);
+    border: pxToEm(10, 60) solid grey;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+
+    &:hover {
+        background: green;
+    }
+  }
+  
+  .buttons {
+    margin-top:40px;
+    text-align:center;
+  }
+  
+  .template {
+    display:none;
+  }

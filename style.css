@@ -1,0 +1,38 @@
+.message {
+  height: 30px;
+  text-align: center;
+}
+
+.board {
+  width: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25em;
+  margin: 40px auto 0 auto;
+  justify-content: center;
+}
+
+.cell {
+  font-size: 3.75em;
+  line-height: 1.3333333333em;
+  width: 1.3333333333em;
+  height: 1.3333333333em;
+  background: rgb(231, 231, 231);
+  border: 0.1666666667em solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cell:hover {
+  background: green;
+}
+
+.buttons {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.template {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
